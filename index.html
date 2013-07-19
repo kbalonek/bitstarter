@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>My First Bitstarter</title>
+<title>Drones for humanity</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
 <link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
 <link type="text/css" rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
-<!-- <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js">
-<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"> -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+
 <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
 <style type="text/css">
@@ -17,11 +18,25 @@
     body {
       padding-top:60px;
     }
+    .linediv-l {
+      border-right: 1px white solid;
+    }
+    .linediv-r {
+      border-left: 1px white solid;
+    }
   }
   /* landscape phones */
   @media (max-width: 480px) {
-    body {
+    .copy {
+      padding: 2.5% 10%;
     }
+    .linediv-l {
+      border-right: 1px white solid;
+    }
+    .linediv-r {
+      border-left: 1px white solid;
+    }
+  
   }
   /* All form factors */
 
@@ -68,6 +83,13 @@
   .asset {
     padding: 2.5% 0%;
   }
+  .footer {
+    color: #cccccc;
+    text-align: center;
+  }
+  .footer {
+    color: #ccccff;
+  }
 </style>
 </head>
 <body>
@@ -96,12 +118,12 @@
 <div class="container">
   <div class="row-fluid heading">
     <div class="span12">
-      <h1>New, better website</h1>
+      <h1>Drones for humanity</h1>
     </div>
   </div>
   <div class="row-fluid subheading">
     <div class="span12">
-      <p class="lead">This is my first bitstarter project.</p>
+      <p class="lead">The new way of utilizing UAV.</p>
     </div>
   </div>
   <div class="row-fluid pitch">
@@ -123,7 +145,7 @@
 	    </div>
 	  </div>
 	  <div class="span4">
-	    <div class="linediv-l">
+	    <div class="linediv-r">
 	      <h3>10</h3> <p>days left</p>
 	    </div>
 	  </div>
@@ -160,14 +182,52 @@ There are a wide variety of UAV shapes, sizes, configurations, and characteristi
       <img class="img-polaroid" src="http://placehold.it/480x300">
     </div>
   </div>
-  <div class="row faq">
-    <div class="span12">
-      FAQ
+  <div class="row-fluid faq">
+    <div class="span10 offset1">
+      <h3>FAQ</h3>
+      <div class="accordion" id="accordion2">
+	<div class="accordion-group">
+	  <div class ="accordion-heading">
+	    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+	      What does FAQ stand for?
+	    </a>
+	  </div>
+	  <div id="collapseOne" class="accordion-body collapse">
+	    <div class="accordion-inner">
+	      Frequently Asked Question.
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-group">
+	  <div class ="accordion-heading">
+	    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+	      What's a frequently asked question?
+	    </a>
+	  </div>
+	  <div id="collapseTwo" class="accordion-body collapse">
+	    <div class="accordion-inner">
+	      A question which is commonly asked by users.
+	    </div>
+	  </div>
+	</div>
+	<div class="accordion-group">
+	  <div class ="accordion-heading">
+	    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse3">
+	      Do you have any particular idea for a business.
+	    </a>
+	  </div>
+	  <div id="collapse3" class="accordion-body collapse">
+	    <div class="accordion-inner">
+	      To be honest, none at all! It's just for fun.
+	    </div>
+	  </div>
+	</div>
+      </div>
     </div>
   </div>
-  <div class="row footer">
+  <div class="row-fluid footer">
     <div class="span12">
-      Footer
+      <p>This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</<a>, without all the cruft that would otherwise be put at the bottom of the page.</p>
     </div>
   </div>
 </div>
